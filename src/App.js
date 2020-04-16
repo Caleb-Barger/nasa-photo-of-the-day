@@ -2,8 +2,8 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from 'axios'
 import Header from './components/Header'
-import Photo from './components/Photo'
-import Description from './components/Description'
+import ImgMediaCard from './components/ImgMediaCard'
+// import Description from './components/Description'
 import AppContainer from './components/AppContainer'
 
 import potd from './data.json' // for testing without using up all my get requests
@@ -30,8 +30,8 @@ function App() {
   return (
     <AppContainer>
       {data && <Header data={data}/>}
-      {data && <Photo data={data}/>}
-      {data && <Description data={data}/>}
+      {data && <ImgMediaCard data={data}/>}
+      {/* {data && <Description data={data}/>} */}
     </AppContainer>
   );
 }
